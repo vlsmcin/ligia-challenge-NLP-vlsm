@@ -6,6 +6,33 @@
 
 Projeto de classificação de textos para detecção de desinformação digital. O objetivo é desenvolver e avaliar modelos de NLP capazes de distinguir notícias legítimas de conteúdos falsos com base em padrões linguísticos e semânticos. O projeto foi desenvolvido como parte da segunda etapa do processo seletivo da Liga Acadêmica de Inteligẽncia Artificial da UFPE.
 
+## 📦 Pré-requisitos
+
+- Python 3.12+
+- Conda (Anaconda ou Miniconda)
+
+---
+
+## ⚙️ Setup do ambiente
+
+### 1. Criar o ambiente virtual
+
+```bash
+conda create -n ligia-challenge-NLP python=3.12
+```
+
+### 2. Ativar o ambiente
+
+```bash
+conda activate ligia-challenge-NLP
+```
+
+### 3. Instalar as dependências
+
+```bash
+python -m pip install -r requirements.txt
+```
+
 ## Project Organization
 
 ```
