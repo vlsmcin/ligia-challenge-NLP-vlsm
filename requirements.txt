@@ -1,4 +1,10 @@
 pip
 python-dotenv
 ruff
+kagglehub
+pandas
+matplotlib
+scikit-learn
+nltk
+xgboost
 -e .
