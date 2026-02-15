@@ -3,7 +3,7 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "src"
+name = "script"
 version = "0.0.1"
 description = "Projeto de classifica\u00e7\u00e3o de textos para detec\u00e7\u00e3o de desinforma\u00e7\u00e3o digital. O objetivo \u00e9 desenvolver e avaliar modelos de NLP capazes de distinguir not\u00edcias leg\u00edtimas de conte\u00fados falsos com base em padr\u00f5es lingu\u00edsticos e sem\u00e2nticos. O projeto foi desenvolvido como parte da segunda etapa do processo seletivo da Liga Acad\u00eamica de Intelig\u1ebdncia Artificial da UFPE."
 authors = [
@@ -20,13 +20,13 @@ requires-python = "~=3.12.0"
 
 [tool.ruff]
 line-length = 99
-src = ["src"]
-include = ["pyproject.toml", "src/**/*.py"]
+src = ["script"]
+include = ["pyproject.toml", "script/**/*.py"]
 
 [tool.ruff.lint]
 extend-select = ["I"]  # Add import sorting
 
 [tool.ruff.lint.isort]
-known-first-party = ["src"]
+known-first-party = ["script"]
 force-sort-within-sections = true
 
