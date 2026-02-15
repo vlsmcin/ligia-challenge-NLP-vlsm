@@ -75,10 +75,22 @@ python -m pip install -r requirements.txt
 python scripts/preprocessing.py
 ```
 
+Ou usando make:
+
+```bash
+make preprocess
+```
+
 ### 2. Treinar modelo final
 
 ```bash
 python scripts/training.py
+```
+
+Ou usando make:
+
+```bash
+make train
 ```
 
 O modelo treinado sera salvo em `models/best_model.joblib`.
