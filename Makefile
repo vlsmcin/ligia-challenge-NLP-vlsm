@@ -39,9 +39,15 @@ format:
 	ruff check --fix
 	ruff format
 
+## Generate processed data matrices and vectorizers
+.PHONY: preprocess
+preprocess:
+	$(PYTHON_INTERPRETER) scripts/preprocessing.py
 
-
-
+## Train the model with best hyperparameters
+.PHONY: train
+train:
+	$(PYTHON_INTERPRETER) scripts/training.py
 
 ## Set up Python interpreter environment
 .PHONY: create_environment
