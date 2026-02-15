@@ -40,8 +40,6 @@ python -m pip install -r requirements.txt
 ├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
 ├── README.md          <- The top-level README for developers using this project.
 ├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
 │   ├── processed      <- The final, canonical data sets for modeling.
 │   └── raw            <- The original, immutable data dump.
 │
@@ -51,6 +49,10 @@ python -m pip install -r requirements.txt
 ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
 │                         the creator's initials, and a short `-` delimited description, e.g.
 │                         `1.0-jqp-initial-data-exploration`.
+│
+├── scripts            <- Scripts executaveis para pre-processamento e treino
+│   ├── preprocessing.py <- Gera matrizes em data/processed e salva vetorizadores
+│   └── training.py     <- Treina o modelo final e salva models/best_model.joblib
 │
 ├── pyproject.toml     <- Project configuration file with package metadata for 
 │                         src and configuration for tools like black
@@ -64,6 +66,22 @@ python -m pip install -r requirements.txt
     │
     └── __init__.py             <- Makes src a Python module
 ```
+
+## 🧪 Como executar
+
+### 1. Gerar dados processados
+
+```bash
+python scripts/preprocessing.py
+```
+
+### 2. Treinar modelo final
+
+```bash
+python scripts/training.py
+```
+
+O modelo treinado sera salvo em `models/best_model.joblib`.
 
 --------
 
