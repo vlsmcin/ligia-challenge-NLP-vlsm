@@ -1,11 +1,12 @@
 pip
 python-dotenv
 ruff
-kagglehub
+numpy==2.3
 pandas
 matplotlib
 seaborn
 scikit-learn
 nltk
 joblib
+shap
 -e .
